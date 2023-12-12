@@ -104,9 +104,16 @@ public class Therefor {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		//Send in the args one at a time
-		type(args);
+	public static void main(Object args) {
+		try {
+			type(args);			
+		} catch (NullPointerException E) {
+			System.err.println(E);
+		} finally {
+			System.out.println("There was an error:\t" + System.err + "\nPlease contact developer");
+		}
+		return;
+		
 	}
 
 }
