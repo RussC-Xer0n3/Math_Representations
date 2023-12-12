@@ -2,6 +2,9 @@
 Convert algebraic symbols to code logic - Java
 
 ## Therefor
+
+### *A base class for defining therefore statements according to type definition in example - use this class when working with autonomous data where the return type and value from the calling method is uncertain, write each variant of this class according to your desired processing requirements per type*
+
 With regards to therefor, we can write a separate because method which recurrently calls therefor and sends data, once processed we can ascertain a representation of the data variable according to the sub callback methods which can be written bespokely into the Therefor template. In example
 
 ### If *because()* is used with a bespoke *therefor* template
