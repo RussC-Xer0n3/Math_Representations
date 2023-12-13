@@ -7,24 +7,24 @@ package Math_Representations;
 
 public class Because {
 
-	public static void main(Object args) {
+	public static void because(Object...objects) {
 		
-		if (args != null) {
+		if (objects != null) {
 			try {
-				while (args != null) {
-				Therefor.main(args);
+				while (objects != null) {
+					Therefor.therefor(objects);
 				}
 			} catch (NullPointerException E) {
 				System.err.println(E);
 			} finally {
 				System.out.println("There was an issue:\t" + System.err + "\n....Please refer to developers for debugging");
 				try {
-					Therefor.type(args);
+					Therefor.type(objects);
 				} catch (Exception E) { 
 					System.err.println(E);
 					System.out.println("There was an issue:\t" + System.err + "\n" + E +"\r\n....Please refer to developers for debugging");
 				} finally {
-					System.out.println(System.getenv((String) args));
+					System.out.println(System.getenv(objects.toString()));
 				}
 			}
 		}
